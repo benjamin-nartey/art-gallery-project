@@ -1,0 +1,1500 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+}
+img {
+  display: block;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+header .grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 450px 540px;
+}
+
+header .grid-container > div {
+  width: 100%;
+  height: 70rem;
+}
+header .grid-container .grid-column-1 {
+  background: rgba(21, 21, 21, 1);
+}
+
+header .grid-container .grid-column-2 {
+  background-image: url("../img/image-hero@2x.jpg");
+  background-size: cover;
+  /* background-position: center bottom 40%; */
+  background-position: center;
+}
+
+.heading--primary {
+  position: absolute;
+  top: 21%;
+  left: 12%;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 9.6rem;
+  line-height: 8.8rem;
+  font-weight: 900;
+}
+.heading--primary-main {
+  display: inline;
+  /*color: #fff;*/
+  background: linear-gradient(to right, #fff 95%, #151515 5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading--primary-sub {
+  display: block;
+  color: #fff;
+}
+
+.heading--primary-sub .text-span {
+  color: #151515;
+}
+
+header .text-box {
+  width: 30rem;
+  position: absolute;
+  right: 12%;
+  top: 21%;
+}
+
+header .text-box p {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #444;
+  margin-bottom: 6.4rem;
+}
+a {
+  text-decoration: none;
+}
+
+.btn {
+  width: 26rem;
+  height: 7.2rem;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  place-items: center;
+}
+.btn .location-text-btn {
+  width: 100%;
+  height: 100%;
+  background: #151515;
+  display: grid;
+  place-items: center;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.364rem;
+  transition: all 0.5s linear;
+}
+
+.btn .right-arrow {
+  width: 100%;
+  height: 100%;
+  background: #d5966c;
+  display: grid;
+  place-items: center;
+  transition: all 0.5s linear;
+}
+
+.btn:hover .location-text-btn {
+  background: #d5966c;
+}
+
+.btn:hover .right-arrow {
+  background: #151515;
+}
+
+main {
+  height: 200vh;
+  width: 100%;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 15rem;
+  padding-bottom: 10rem;
+}
+
+main .img-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 40% 30% 30%;
+  grid-gap: 3rem;
+}
+
+main .img-grid > div {
+  width: calc(100%);
+  height: 100%;
+}
+
+main .img-grid .grid-1 {
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .img-grid .grid-1 h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+main .img-grid .grid-1 p {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #444;
+}
+
+main .img-grid .grid-1 h2 span {
+  display: block;
+}
+main .img-grid .grid-2 {
+  grid-column: span 4;
+}
+
+main .img-grid .grid-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+main .img-grid .grid-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+main .img-grid .grid-4 img {
+  width: 100%;
+  height: 100%;
+}
+
+main .img-grid .grid-3 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+main .img-grid .grid-4 {
+  grid-column: span 3;
+}
+
+main .img-grid .grid-5 {
+  grid-column: span 3;
+  background: rgba(21, 21, 21, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .img-grid .grid-5 h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 6rem;
+  line-height: 6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  color: #fff;
+}
+main .img-grid .grid-5 h2 span {
+  display: block;
+}
+main .img-grid .grid-5 p {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  color: #fff;
+  width: 26rem;
+}
+
+footer {
+  width: 100%;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background: #151515;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 10rem;
+}
+
+footer h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+footer h1 span {
+  display: block;
+}
+
+footer p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #fff;
+}
+
+footer span {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer span svg {
+  margin-right: 3rem;
+}
+
+footer span svg:last-child {
+  margin-right: 0;
+}
+
+/*=====Desktops with 1281 resolution and higher*/
+@media (min-width: 1281px) {
+  header {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+  header .grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 450px 540px;
+  }
+
+  header .grid-container > div {
+    width: 100%;
+    height: 70rem;
+  }
+  header .grid-container .grid-column-1 {
+    background: rgba(21, 21, 21, 1);
+  }
+
+  header .grid-container .grid-column-2 {
+    background-image: url("../img/image-hero@2x.jpg");
+    background-size: cover;
+    /* background-position: center bottom 40%; */
+    background-position: center;
+  }
+
+  .heading--primary {
+    position: absolute;
+    top: 21%;
+    left: 12%;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 9.6rem;
+    line-height: 8.8rem;
+    font-weight: 900;
+  }
+  .heading--primary-main {
+    display: inline;
+    /*color: #fff;*/
+    background: linear-gradient(to right, #fff 95%, #151515 5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .heading--primary-sub {
+    display: block;
+    color: #fff;
+  }
+
+  .heading--primary-sub .text-span {
+    color: #151515;
+  }
+
+  header .text-box {
+    width: 30rem;
+    position: absolute;
+    right: 12%;
+    top: 21%;
+  }
+
+  header .text-box p {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color: #444;
+    margin-bottom: 6.4rem;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 26rem;
+    height: 7.2rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+  }
+  .btn .location-text-btn {
+    width: 100%;
+    height: 100%;
+    background: #151515;
+    display: grid;
+    place-items: center;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.364rem;
+    transition: all 0.5s linear;
+  }
+
+  .btn .right-arrow {
+    width: 100%;
+    height: 100%;
+    background: #d5966c;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s linear;
+  }
+
+  .btn:hover .location-text-btn {
+    background: #d5966c;
+  }
+
+  .btn:hover .right-arrow {
+    background: #151515;
+  }
+
+  main {
+    height: 200vh;
+    width: 100%;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+  }
+
+  main .img-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40% 30% 30%;
+    grid-gap: 3rem;
+  }
+
+  main .img-grid > div {
+    width: calc(100%);
+    height: 100%;
+  }
+
+  main .img-grid .grid-1 {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .img-grid .grid-1 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+  }
+  main .img-grid .grid-1 p {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color: #444;
+  }
+
+  main .img-grid .grid-1 h2 span {
+    display: block;
+  }
+  main .img-grid .grid-2 {
+    grid-column: span 4;
+  }
+
+  main .img-grid .grid-2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-3 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-4 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-3 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  main .img-grid .grid-4 {
+    grid-column: span 3;
+  }
+
+  main .img-grid .grid-5 {
+    grid-column: span 3;
+    background: rgba(21, 21, 21, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .img-grid .grid-5 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    color: #fff;
+  }
+  main .img-grid .grid-5 h2 span {
+    display: block;
+  }
+  main .img-grid .grid-5 p {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color: #fff;
+    width: 26rem;
+  }
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #151515;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10rem;
+  }
+
+  footer h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  footer h1 span {
+    display: block;
+  }
+
+  footer p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #fff;
+  }
+
+  footer span {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer span svg {
+    margin-right: 3rem;
+  }
+
+  footer span svg:last-child {
+    margin-right: 0;
+  }
+}
+
+/*=====Desktops with 1281 resolution and higher*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+  }
+  header .grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 450px 540px;
+  }
+
+  header .grid-container > div {
+    width: 100%;
+    height: 70rem;
+  }
+  header .grid-container .grid-column-1 {
+    background: rgba(21, 21, 21, 1);
+  }
+
+  header .grid-container .grid-column-2 {
+    background-image: url("../img/image-hero@2x.jpg");
+    background-size: cover;
+    /* background-position: center bottom 40%; */
+    background-position: center;
+  }
+
+  .heading--primary {
+    position: absolute;
+    top: 21%;
+    left: 12%;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 9.6rem;
+    line-height: 8.8rem;
+    font-weight: 900;
+  }
+  .heading--primary-main {
+    display: inline;
+    /*color: #fff;*/
+    background: linear-gradient(to right, #fff 95%, #151515 5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .heading--primary-sub {
+    display: block;
+    color: #fff;
+  }
+
+  .heading--primary-sub .text-span {
+    color: #151515;
+  }
+
+  header .text-box {
+    width: 30rem;
+    position: absolute;
+    right: 12%;
+    top: 21%;
+  }
+
+  header .text-box p {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color: #444;
+    margin-bottom: 6.4rem;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 26rem;
+    height: 7.2rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+  }
+  .btn .location-text-btn {
+    width: 100%;
+    height: 100%;
+    background: #151515;
+    display: grid;
+    place-items: center;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.364rem;
+    transition: all 0.5s linear;
+  }
+
+  .btn .right-arrow {
+    width: 100%;
+    height: 100%;
+    background: #d5966c;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s linear;
+  }
+
+  .btn:hover .location-text-btn {
+    background: #d5966c;
+  }
+
+  .btn:hover .right-arrow {
+    background: #151515;
+  }
+
+  main {
+    height: 200vh;
+    width: 100%;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+  }
+
+  main .img-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40% 30% 30%;
+    grid-gap: 3rem;
+  }
+
+  main .img-grid > div {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-1 {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .img-grid .grid-1 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+  }
+  main .img-grid .grid-1 p {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color: #444;
+  }
+
+  main .img-grid .grid-1 h2 span {
+    display: block;
+  }
+  main .img-grid .grid-2 {
+    grid-column: span 4;
+  }
+
+  main .img-grid .grid-2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-3 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-4 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-3 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  main .img-grid .grid-4 {
+    grid-column: span 3;
+  }
+
+  main .img-grid .grid-5 {
+    grid-column: span 3;
+    background: rgba(21, 21, 21, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .img-grid .grid-5 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 6rem;
+    line-height: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    color: #fff;
+  }
+  main .img-grid .grid-5 h2 span {
+    display: block;
+  }
+  main .img-grid .grid-5 p {
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    color: #fff;
+    width: 26rem;
+  }
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #151515;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10rem;
+  }
+
+  footer h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 3.6rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  footer h1 span {
+    display: block;
+  }
+
+  footer p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #fff;
+  }
+
+  footer span {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  footer span svg {
+    margin-right: 3rem;
+  }
+
+  footer span svg:last-child {
+    margin-right: 0;
+  }
+}
+
+/*===========Device Tablets, Ipads===========*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+  header {
+    height: 100vh;
+  }
+  header .grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60%;
+  }
+  header .grid-container > div {
+    width: 100%;
+    height: 100%;
+  }
+  header .grid-container .grid-column-1 {
+    display: none;
+  }
+
+  .heading--primary {
+    position: absolute;
+    top: 33%;
+    left: 54%;
+    /* transform: translate(31rem, -10rem); */
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 6.6rem;
+    line-height: 6.5rem;
+    font-weight: 900;
+  }
+  .heading--primary-main {
+    display: inline;
+    /*color: #fff;*/
+    background: linear-gradient(to right, #151515 95%, #151515 5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .heading--primary-sub {
+    display: block;
+    color: #151515;
+  }
+
+  .heading--primary-sub .text-span {
+    color: #151515;
+  }
+
+  header .text-box {
+    width: 37rem;
+    position: absolute;
+    left: 54%;
+    top: 53%;
+  }
+
+  header .text-box p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #444;
+    margin-bottom: 6.4rem;
+  }
+  main {
+    height: 100vh;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 12rem;
+    padding-bottom: 1rem;
+    margin-bottom: 10rem;
+  }
+
+  main .img-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40% 30% 30%;
+    grid-gap: 1.5rem;
+  }
+
+  main .img-grid > div {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-1 {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .img-grid .grid-1 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 5rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+  }
+  main .img-grid .grid-1 p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #444;
+  }
+
+  main .img-grid .grid-1 h2 span {
+    display: inline;
+  }
+  main .img-grid .grid-2 {
+    grid-column: span 4;
+  }
+
+  main .img-grid .grid-2 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-3 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-4 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-3 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  main .img-grid .grid-4 {
+    grid-column: span 3;
+  }
+
+  main .img-grid .grid-5 {
+    grid-column: span 3;
+    background: rgba(21, 21, 21, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  main .img-grid .grid-5 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 5rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    color: #fff;
+  }
+  main .img-grid .grid-5 h2 span {
+    display: block;
+  }
+  main .img-grid .grid-5 p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #fff;
+    width: 21rem;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 26rem;
+    height: 7.2rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+  }
+  .btn .location-text-btn {
+    width: 100%;
+    height: 100%;
+    background: #151515;
+    display: grid;
+    place-items: center;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.364rem;
+    transition: all 0.5s linear;
+  }
+
+  .btn .right-arrow {
+    width: 100%;
+    height: 100%;
+    background: #d5966c;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s linear;
+  }
+
+  .btn:hover .location-text-btn {
+    background: #d5966c;
+  }
+
+  .btn:hover .right-arrow {
+    background: #151515;
+  }
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #151515;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10rem;
+    margin-top: 15rem;
+  }
+
+  footer h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  footer h1 span {
+    display: block;
+  }
+
+  footer p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #fff;
+  }
+}
+
+/*===============larger mobile screens and low resolution tabs========================*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+  }
+  header {
+    height: 100vh;
+  }
+  header .grid-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60%;
+  }
+  header .grid-container > div {
+    width: 100%;
+    height: 100%;
+  }
+  header .grid-container .grid-column-1 {
+    display: none;
+  }
+
+  .heading--primary {
+    position: absolute;
+    top: 32%;
+    left: 54%;
+    /* transform: translate(31rem, -10rem); */
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 6rem;
+    line-height: 5.5rem;
+    font-weight: 900;
+  }
+  .heading--primary-main {
+    display: inline;
+    /*color: #fff;*/
+    background: linear-gradient(to right, #151515 95%, #151515 5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .heading--primary-sub {
+    display: block;
+    color: #151515;
+  }
+
+  .heading--primary-sub .text-span {
+    color: #151515;
+  }
+
+  header .text-box {
+    width: 37rem;
+    position: absolute;
+    left: 54%;
+    top: 54%;
+  }
+
+  header .text-box p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #444;
+    margin-bottom: 6.4rem;
+  }
+  main {
+    height: 100vh;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 12rem;
+    padding-bottom: 1rem;
+    margin-bottom: 10rem;
+  }
+
+  main .img-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 40% 30% 30%;
+    grid-gap: 1.5rem;
+  }
+
+  main .img-grid > div {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-1 {
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main .img-grid .grid-1 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4.8rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+  }
+  main .img-grid .grid-1 p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #444;
+  }
+
+  main .img-grid .grid-1 h2 span {
+    display: inline;
+  }
+  main .img-grid .grid-2 {
+    grid-column: span 4;
+  }
+
+  main .img-grid .grid-2 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-3 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-4 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-3 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
+  main .img-grid .grid-4 {
+    grid-column: span 3;
+  }
+
+  main .img-grid .grid-5 {
+    grid-column: span 3;
+    background: rgba(21, 21, 21, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .img-grid .grid-5 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4.8rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    color: #fff;
+  }
+  main .img-grid .grid-5 h2 span {
+    display: block;
+  }
+  main .img-grid .grid-5 p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #fff;
+    width: 21rem;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 26rem;
+    height: 7.2rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+  }
+  .btn .location-text-btn {
+    width: 100%;
+    height: 100%;
+    background: #151515;
+    display: grid;
+    place-items: center;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.364rem;
+    transition: all 0.5s linear;
+  }
+
+  .btn .right-arrow {
+    width: 100%;
+    height: 100%;
+    background: #d5966c;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s linear;
+  }
+
+  .btn:hover .location-text-btn {
+    background: #d5966c;
+  }
+
+  .btn:hover .right-arrow {
+    background: #151515;
+  }
+
+  footer {
+    width: 100%;
+    bottom: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: #151515;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10rem;
+    margin-top: 15rem;
+  }
+
+  footer h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  footer h1 span {
+    display: block;
+  }
+
+  footer p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #fff;
+  }
+}
+
+/*==================small mobile screens=====================*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    overflow-x: hidden;
+  }
+  header {
+    height: 100vh;
+  }
+  header .grid-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  header .grid-container > div {
+    width: 100%;
+    height: 40%;
+  }
+  header .grid-container .grid-column-1 {
+    display: none;
+  }
+
+  .heading--primary {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    /* transform: translate(31rem, -10rem); */
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 5.6rem;
+    line-height: 5rem;
+    font-weight: 900;
+  }
+  .heading--primary-main {
+    display: inline;
+    /*color: #fff;*/
+    background: linear-gradient(to right, #151515 95%, #151515 5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .heading--primary-sub {
+    display: block;
+    color: #151515;
+  }
+
+  .heading--primary-sub .text-span {
+    color: #151515;
+  }
+
+  header .text-box {
+    width: 37rem;
+    position: absolute;
+    left: 5%;
+    top: 60%;
+  }
+
+  header .text-box p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #444;
+    margin-bottom: 5rem;
+  }
+  main {
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  main .img-grid {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1.5rem; */
+  }
+
+  main .img-grid > div {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .img-grid .grid-2 {
+    order: -1;
+  }
+
+  main .img-grid .grid-1 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4.8rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+  }
+  main .img-grid .grid-1 p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #444;
+  }
+
+  main .img-grid .grid-1 h2 span {
+    display: inline;
+  }
+
+  main .img-grid .grid-2 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-3 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-4 img {
+    object-fit: cover;
+  }
+
+  main .img-grid .grid-5 {
+    background: rgba(21, 21, 21, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  main .img-grid .grid-5 h2 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 4.8rem;
+    line-height: 4.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 3.2rem;
+    color: #fff;
+  }
+  main .img-grid .grid-5 h2 span {
+    display: block;
+  }
+  main .img-grid .grid-5 p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #fff;
+    width: 21rem;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 26rem;
+    height: 7.2rem;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    place-items: center;
+  }
+  .btn .location-text-btn {
+    width: 100%;
+    height: 100%;
+    background: #151515;
+    display: grid;
+    place-items: center;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.364rem;
+    transition: all 0.5s linear;
+  }
+
+  .btn .right-arrow {
+    width: 100%;
+    height: 100%;
+    background: #d5966c;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s linear;
+  }
+
+  .btn:hover .location-text-btn {
+    background: #d5966c;
+  }
+
+  .btn:hover .right-arrow {
+    background: #151515;
+  }
+
+  footer {
+    position: relative;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #151515;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    margin-top: 20rem;
+  }
+
+  footer h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+  }
+
+  footer h1 span {
+    display: block;
+  }
+
+  footer p {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #fff;
+  }
+
+  footer span {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  footer span svg {
+    margin-right: 3rem;
+  }
+
+  footer span svg:last-child {
+    margin-right: 0;
+  }
+}
