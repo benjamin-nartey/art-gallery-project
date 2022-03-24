@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Oufit', sans-serif;
 }
 
 $gold: #D5966C;
@@ -12,11 +13,13 @@ $dark-gray: #444444;
 $almost-black: #151515;
 
 %heading-font {
-  font-family: 'Big Shoulders Display Black';
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 900;
 }
 
 %body-font {
-  font-family: 'Outfit Light';
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
 }
 
 %heading-xl {
