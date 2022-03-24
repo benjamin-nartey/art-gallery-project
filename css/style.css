@@ -23,19 +23,19 @@ img {
 
 header {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
 }
 header .grid-container {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 450px 540px;
+  grid-template-columns: 30% 40%;
 }
 
 header .grid-container > div {
   width: 100%;
-  height: 70rem;
+  height: 100%;
 }
 header .grid-container .grid-column-1 {
   background: rgba(21, 21, 21, 1);
@@ -51,7 +51,7 @@ header .grid-container .grid-column-2 {
 .heading--primary {
   position: absolute;
   top: 21%;
-  left: 12%;
+  left: 9.1%;
   font-family: "Big Shoulders Display", cursive;
   font-size: 9.6rem;
   line-height: 8.8rem;
@@ -75,9 +75,9 @@ header .grid-container .grid-column-2 {
 }
 
 header .text-box {
-  width: 30rem;
+  width: 35rem;
   position: absolute;
-  right: 12%;
+  right: 9.1%;
   top: 21%;
 }
 
@@ -109,7 +109,7 @@ a {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.364rem;
-  transition: all 0.5s linear;
+  transition: all 0.25s linear;
 }
 
 .btn .right-arrow {
@@ -118,7 +118,7 @@ a {
   background: #d5966c;
   display: grid;
   place-items: center;
-  transition: all 0.5s linear;
+  transition: all 0.25s linear;
 }
 
 .btn:hover .location-text-btn {
@@ -132,10 +132,7 @@ a {
 main {
   height: 200vh;
   width: 100%;
-  padding-left: 15rem;
-  padding-right: 15rem;
-  padding-top: 15rem;
-  padding-bottom: 10rem;
+  padding: 13rem;
 }
 
 main .img-grid {
@@ -233,8 +230,8 @@ main .img-grid .grid-5 p {
 
 footer {
   width: 100%;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 13rem;
+  padding-right: 13rem;
   padding-top: 8rem;
   padding-bottom: 8rem;
   background: #151515;
@@ -268,6 +265,13 @@ footer span {
 
 footer span svg {
   margin-right: 3rem;
+  fill: #fff;
+  transition: all 0.25s ease-out;
+  cursor: pointer;
+}
+
+footer span svg:hover {
+  fill: #d5966c;
 }
 
 footer span svg:last-child {
@@ -278,19 +282,19 @@ footer span svg:last-child {
 @media (min-width: 1281px) {
   header {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
   }
   header .grid-container {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 450px 540px;
+    grid-template-columns: 30% 40%;
   }
 
   header .grid-container > div {
     width: 100%;
-    height: 70rem;
+    height: 100%;
   }
   header .grid-container .grid-column-1 {
     background: rgba(21, 21, 21, 1);
@@ -306,7 +310,7 @@ footer span svg:last-child {
   .heading--primary {
     position: absolute;
     top: 21%;
-    left: 12%;
+    left: 9.1%;
     font-family: "Big Shoulders Display", cursive;
     font-size: 9.6rem;
     line-height: 8.8rem;
@@ -330,9 +334,9 @@ footer span svg:last-child {
   }
 
   header .text-box {
-    width: 30rem;
+    width: 35rem;
     position: absolute;
-    right: 12%;
+    right: 9.1%;
     top: 21%;
   }
 
@@ -364,7 +368,7 @@ footer span svg:last-child {
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.364rem;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn .right-arrow {
@@ -373,7 +377,7 @@ footer span svg:last-child {
     background: #d5966c;
     display: grid;
     place-items: center;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn:hover .location-text-btn {
@@ -387,10 +391,7 @@ footer span svg:last-child {
   main {
     height: 200vh;
     width: 100%;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-top: 15rem;
-    padding-bottom: 10rem;
+    padding: 13rem;
   }
 
   main .img-grid {
@@ -403,7 +404,7 @@ footer span svg:last-child {
   }
 
   main .img-grid > div {
-    width: calc(100%);
+    width: 100%;
     height: 100%;
   }
 
@@ -489,8 +490,8 @@ footer span svg:last-child {
   footer {
     width: 100%;
     bottom: 0;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
     background: #151515;
@@ -531,23 +532,23 @@ footer span svg:last-child {
   }
 }
 
-/*=====Desktops with 1281 resolution and higher*/
+/*=====Desktops with 1025 resolution and higher*/
 @media (min-width: 1025px) and (max-width: 1280px) {
   header {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
   }
   header .grid-container {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 450px 540px;
+    grid-template-columns: 30% 40%;
   }
 
   header .grid-container > div {
     width: 100%;
-    height: 70rem;
+    height: 100%;
   }
   header .grid-container .grid-column-1 {
     background: rgba(21, 21, 21, 1);
@@ -563,7 +564,7 @@ footer span svg:last-child {
   .heading--primary {
     position: absolute;
     top: 21%;
-    left: 12%;
+    left: 9.1%;
     font-family: "Big Shoulders Display", cursive;
     font-size: 9.6rem;
     line-height: 8.8rem;
@@ -589,7 +590,7 @@ footer span svg:last-child {
   header .text-box {
     width: 30rem;
     position: absolute;
-    right: 12%;
+    right: 9.1%;
     top: 21%;
   }
 
@@ -621,7 +622,7 @@ footer span svg:last-child {
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.364rem;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn .right-arrow {
@@ -630,7 +631,7 @@ footer span svg:last-child {
     background: #d5966c;
     display: grid;
     place-items: center;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn:hover .location-text-btn {
@@ -644,10 +645,7 @@ footer span svg:last-child {
   main {
     height: 200vh;
     width: 100%;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-top: 15rem;
-    padding-bottom: 10rem;
+    padding: 13rem;
   }
 
   main .img-grid {
@@ -746,8 +744,8 @@ footer span svg:last-child {
   footer {
     width: 100%;
     bottom: 0;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
     background: #151515;
@@ -813,13 +811,17 @@ footer span svg:last-child {
   .heading--primary {
     position: absolute;
     top: 33%;
-    left: 54%;
+    left: 0;
+    width: 100%;
     /* transform: translate(31rem, -10rem); */
     font-family: "Big Shoulders Display", cursive;
     font-size: 6.6rem;
     line-height: 6.5rem;
     font-weight: 900;
+    padding-left: 54%;
+    padding-right: 2rem;
   }
+
   .heading--primary-main {
     display: inline;
     /*color: #fff;*/
@@ -838,10 +840,13 @@ footer span svg:last-child {
   }
 
   header .text-box {
-    width: 37rem;
+    width: 100%;
     position: absolute;
-    left: 54%;
-    top: 53%;
+    right: 0;
+    width: 100%;
+    top: 54%;
+    padding-left: 54%;
+    padding-right: 2rem;
   }
 
   header .text-box p {
@@ -849,15 +854,12 @@ footer span svg:last-child {
     line-height: 2.8rem;
     color: #444;
     margin-bottom: 6.4rem;
+    /* width: 30rem; */
   }
   main {
     height: 100vh;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 12rem;
-    padding-bottom: 1rem;
-    margin-bottom: 10rem;
+    padding: 10rem 2rem;
   }
 
   main .img-grid {
@@ -972,7 +974,7 @@ footer span svg:last-child {
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.364rem;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn .right-arrow {
@@ -981,7 +983,7 @@ footer span svg:last-child {
     background: #d5966c;
     display: grid;
     place-items: center;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn:hover .location-text-btn {
@@ -995,14 +997,13 @@ footer span svg:last-child {
   footer {
     width: 100%;
     bottom: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
     background: #151515;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 10rem;
     margin-top: 15rem;
   }
 
@@ -1050,7 +1051,10 @@ footer span svg:last-child {
   .heading--primary {
     position: absolute;
     top: 32%;
-    left: 54%;
+    left: 0;
+    width: 100%;
+    padding-left: 53%;
+    padding-right: 2rem;
     /* transform: translate(31rem, -10rem); */
     font-family: "Big Shoulders Display", cursive;
     font-size: 6rem;
@@ -1075,10 +1079,12 @@ footer span svg:last-child {
   }
 
   header .text-box {
-    width: 37rem;
+    width: 100%;
     position: absolute;
-    left: 54%;
+    left: 0;
     top: 54%;
+    padding-left: 53%;
+    padding-right: 2rem;
   }
 
   header .text-box p {
@@ -1090,11 +1096,7 @@ footer span svg:last-child {
   main {
     height: 100vh;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 12rem;
-    padding-bottom: 1rem;
-    margin-bottom: 10rem;
+    padding: 10rem 2rem;
   }
 
   main .img-grid {
@@ -1208,7 +1210,7 @@ footer span svg:last-child {
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.364rem;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn .right-arrow {
@@ -1217,7 +1219,7 @@ footer span svg:last-child {
     background: #d5966c;
     display: grid;
     place-items: center;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn:hover .location-text-btn {
@@ -1231,14 +1233,13 @@ footer span svg:last-child {
   footer {
     width: 100%;
     bottom: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 8rem;
     padding-bottom: 8rem;
     background: #151515;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 10rem;
     margin-top: 15rem;
   }
 
@@ -1285,7 +1286,9 @@ footer span svg:last-child {
   .heading--primary {
     position: absolute;
     top: 45%;
-    left: 5%;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
     /* transform: translate(31rem, -10rem); */
     font-family: "Big Shoulders Display", cursive;
     font-size: 5.6rem;
@@ -1312,7 +1315,9 @@ footer span svg:last-child {
   header .text-box {
     width: 37rem;
     position: absolute;
-    left: 5%;
+    left: 0;
+    width: 100%;
+    padding: 0 2rem;
     top: 60%;
   }
 
@@ -1325,11 +1330,7 @@ footer span svg:last-child {
   main {
     min-height: 100vh;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    padding: 5rem 2rem;
   }
 
   main .img-grid {
@@ -1430,7 +1431,7 @@ footer span svg:last-child {
     color: #fff;
     font-weight: 500;
     letter-spacing: 0.364rem;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn .right-arrow {
@@ -1439,7 +1440,7 @@ footer span svg:last-child {
     background: #d5966c;
     display: grid;
     place-items: center;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
   }
 
   .btn:hover .location-text-btn {
@@ -1453,8 +1454,8 @@ footer span svg:last-child {
   footer {
     position: relative;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     background: #151515;
