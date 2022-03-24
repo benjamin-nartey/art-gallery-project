@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  height: 3rem;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 0 0.75rem;
+  transition: all 0.25s ease-out;
+}
+button:nth-child(1) {
+  background-color: #151515;
+}
+button:nth-child(2) {
+  background-color: #D5966C;
+}
+
+a {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 10rem;
+}
+a button:nth-child(1) {
+  grid-column: 1/5;
+  grid-row: 1;
+}
+a button:nth-child(2) {
+  grid-column: 2/6;
+  grid-row: 1;
+}
+
+#location-link {
+  position: absolute;
+  left: 5%;
+  width: 12rem;
+}
+
+.location button:nth-child(1) {
+  text-align: left;
+}
+.location button:nth-child(2) {
+  z-index: 1;
+  text-align: left;
+}
+.location a {
+  transition: all 0.5s ease-out;
+}
+.location a:hover > button:nth-child(1) {
+  background-color: #D5966C;
+}
+.location a:hover > button:nth-child(2) {
+  background-color: #151515;
+}
+
+.map {
+  background: url("../img/desktop/image-map.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.location-info {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 3rem;
+  padding: 3rem 5%;
+  background-color: #151515;
+  color: #FFFFFF;
+}
+.location-info-section h3 {
+  color: #D5966C;
+}
+
+address {
+  margin: 3rem 0;
+}
+
+.location-footer {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  gap: 2rem;
+  background-color: #D5966C;
+  padding: 3rem 5%;
+}
+.location-footer-section:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.location-footer-section:nth-child(3) svg {
+  transition: all 0.25s ease-out;
+}
+.location-footer-section:nth-child(3) svg:hover {
+  fill: #FFFFFF;
+}
+
+@media screen and (max-width: 820px) {
+  .map {
+    background: url("../img/tablet/image-map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  #location-link {
+    left: 0;
+  }
+
+  .location-info {
+    grid-template-columns: 1fr;
+  }
+
+  .location-footer {
+    grid-template-columns: 1fr;
+  }
+  .location-footer-section:nth-child(3) {
+    justify-content: start;
+    gap: 2rem;
+  }
+}
