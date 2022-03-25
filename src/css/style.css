@@ -567,6 +567,7 @@ footer span svg:last-child {
   .heading--primary-sub {
     display: block;
     color: #fff;
+     mix-blend-mode: difference;
   }
 
   header .text-box {
