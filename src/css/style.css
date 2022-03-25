@@ -60,18 +60,11 @@ header .grid-container .grid-column-2 {
 .heading--primary-main {
   display: inline;
   /*color: #fff;*/
-  background: linear-gradient(to right, #fff 95%, #151515 5%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .heading--primary-sub {
   display: block;
   color: #fff;
-}
-
-.heading--primary-sub .text-span {
-  color: #151515;
 }
 
 header .text-box {
@@ -318,19 +311,14 @@ footer span svg:last-child {
   }
   .heading--primary-main {
     display: inline;
-    /*color: #fff;*/
-    background: linear-gradient(to right, #fff 95%, #151515 5%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
+    mix-blend-mode: difference;
   }
 
   .heading--primary-sub {
     display: block;
     color: #fff;
-  }
-
-  .heading--primary-sub .text-span {
-    color: #151515;
+    mix-blend-mode: difference;
   }
 
   header .text-box {
@@ -572,19 +560,13 @@ footer span svg:last-child {
   }
   .heading--primary-main {
     display: inline;
-    /*color: #fff;*/
-    background: linear-gradient(to right, #fff 95%, #151515 5%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fff;
+    mix-blend-mode: difference;
   }
 
   .heading--primary-sub {
     display: block;
     color: #fff;
-  }
-
-  .heading--primary-sub .text-span {
-    color: #151515;
   }
 
   header .text-box {
@@ -813,7 +795,7 @@ footer span svg:last-child {
     top: 33%;
     left: 0;
     width: 100%;
-    /* transform: translate(31rem, -10rem); */
+    /* transform: translate(31rem,10rem); */
     font-family: "Big Shoulders Display", cursive;
     font-size: 6.6rem;
     line-height: 6.5rem;
@@ -824,18 +806,11 @@ footer span svg:last-child {
 
   .heading--primary-main {
     display: inline;
-    /*color: #fff;*/
-    background: linear-gradient(to right, #151515 95%, #151515 5%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #151515;
   }
 
   .heading--primary-sub {
     display: block;
-    color: #151515;
-  }
-
-  .heading--primary-sub .text-span {
     color: #151515;
   }
 
@@ -1055,7 +1030,7 @@ footer span svg:last-child {
     width: 100%;
     padding-left: 53%;
     padding-right: 2rem;
-    /* transform: translate(31rem, -10rem); */
+    /* transform: translate(31rem,10rem); */
     font-family: "Big Shoulders Display", cursive;
     font-size: 6rem;
     line-height: 5.5rem;
@@ -1063,18 +1038,11 @@ footer span svg:last-child {
   }
   .heading--primary-main {
     display: inline;
-    /*color: #fff;*/
-    background: linear-gradient(to right, #151515 95%, #151515 5%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #151515;
   }
 
   .heading--primary-sub {
     display: block;
-    color: #151515;
-  }
-
-  .heading--primary-sub .text-span {
     color: #151515;
   }
 
@@ -1289,7 +1257,7 @@ footer span svg:last-child {
     left: 0;
     width: 100%;
     padding: 0 2rem;
-    /* transform: translate(31rem, -10rem); */
+    /* transform: translate(31rem,10rem); */
     font-family: "Big Shoulders Display", cursive;
     font-size: 5.6rem;
     line-height: 5rem;
@@ -1297,10 +1265,7 @@ footer span svg:last-child {
   }
   .heading--primary-main {
     display: inline;
-    /*color: #fff;*/
-    background: linear-gradient(to right, #151515 95%, #151515 5%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #151515;
   }
 
   .heading--primary-sub {
@@ -1349,7 +1314,7 @@ footer span svg:last-child {
   }
 
   main .img-grid .grid-2 {
-    order: -1;
+    order: 1;
   }
 
   main .img-grid .grid-1 h2 {
