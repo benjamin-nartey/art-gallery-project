@@ -6,11 +6,21 @@
   font-family: "Oufit", sans-serif;
 }
 
+p {
+  font-family: Outfit, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
 button {
   height: 3rem;
   border: none;
   color: #FFFFFF;
-  font-weight: 700;
+  font-family: "Big SHoulders Display", cursive;
   padding: 0 0.75rem;
   transition: all 0.25s ease-out;
 }
@@ -42,6 +52,15 @@ a button:nth-child(2) {
   width: 12rem;
 }
 
+address {
+  font-style: normal;
+}
+
+.location button {
+  width: 12rem;
+  height: 4rem;
+  font-size: 1.5rem;
+}
 .location button:nth-child(1) {
   text-align: left;
 }
