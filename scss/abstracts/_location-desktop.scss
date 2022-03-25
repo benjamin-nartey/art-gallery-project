@@ -6,8 +6,17 @@
   width: 12rem;
 }
 
+address {
+  font-style: normal;
+}
+
 .location {
   button {
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.5rem;
+
+
     &:nth-child(1) {
       text-align: left;
     }

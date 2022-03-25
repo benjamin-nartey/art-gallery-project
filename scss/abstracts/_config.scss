@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap');
 
 * {
   margin: 0;
@@ -7,55 +7,49 @@
   font-family: 'Oufit', sans-serif;
 }
 
+p {
+  font-family: Outfit, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
 $gold: #D5966C;
 $white: #FFFFFF;
 $dark-gray: #444444;
 $almost-black: #151515;
 
-%heading-font {
-  font-family: 'Big Shoulders Display', cursive;
-  font-weight: 900;
-}
-
-%body-font {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 300;
-}
-
 %heading-xl {
   font-size: 96px;
   line-height: 88px;
-  @extend %heading-font;
 }
 
 %heading-l {
   font-size: 70px;
   line-height: 70px;
-  @extend %heading-font;
 }
 
 %heading-m {
   font-size: 60px;
   line-height: 50px;
-  @extend %heading-font;
 }
 
 %heading-s {
   font-size: 36px;
   line-height: 36px;
-  @extend %heading-font;
 }
 
 %body-m {
   font-size: 22px;
   line-height: 32px;
-  @extend %body-font;
 }
 
 %body-s {
   font-size: 18px;
   line-height: 28px;
-  @extend %body-font;
 }
 
 @mixin background($url) {
@@ -68,7 +62,7 @@ button {
   height: 3rem;
   border: none;
   color: $white;
-  font-weight: 700;
+  font-family: 'Big SHoulders Display', cursive;
   padding: 0 .75rem;
   transition: all .25s ease-out;
 
